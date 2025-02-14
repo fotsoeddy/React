@@ -3,7 +3,8 @@ import React from 'react'
 const Hero = () => {
   return (
     <div>
-      <Hero />
+      {/* Add your hero content here */}
+      <h1>Hero Section</h1>
     </div>
   )
 }
