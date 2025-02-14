@@ -5,15 +5,91 @@
 @tailwind utilities;
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
+  /* Custom Colors */
+  --primary: #00040f;
+  --secondary: #00f6ff;
+  --dimWhite: rgba(255, 255, 255, 0.7);
+  --dimBlue: rgba(9, 151, 124, 0.1);
+
+  /* Gradients */
   --black-gradient: linear-gradient(
     144.39deg,
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
   );
+
+  /* Shadows */
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
+
+/* Custom Utility Classes */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.text-dimWhite {
+  color: var(--dimWhite);
+}
+
+.text-dimBlue {
+  color: var(--dimBlue);
+}
+
+.shadow-card {
+  box-shadow: var(--card-shadow);
+}
+
+.bg-black-gradient {
+  background: var(--black-gradient);
+}
+
+/* Responsive Screens */
+@media (max-width: 480px) {
+  .xs\:text-xl {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .ss\:text-lg {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sm\:text-base {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1060px) {
+  .md\:text-sm {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .lg\:text-xs {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 1700px) {
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+  }
+}
+
 
 * {
   scroll-behavior: smooth;
