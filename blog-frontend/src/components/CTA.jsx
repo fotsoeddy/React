@@ -10,7 +10,7 @@ export default function CTA() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="bg-black bg-opacity-50 py-20">
+      <div className=" bg-opacity-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h2 
             className="text-4xl font-bold mb-6 text-white"
