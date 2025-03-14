@@ -25,7 +25,7 @@ export default function AuthForm({ isLogin = true }) {
       if (isLogin) {
         localStorage.setItem('accessToken', data.access);
         localStorage.setItem('refreshToken', data.refresh);
-        navigate('/');
+        navigate('/dashboard'); 
         toast.success('Logged in successfully!');
       } else {
         navigate('/login');
