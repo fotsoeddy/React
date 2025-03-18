@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const sidebarVariants = {
-    open: { width: '16rem' }, // w-64
+    open: { width: '10rem' }, // w-64
     closed: { width: '4rem' }, // w-16
   };
 
