@@ -6,7 +6,7 @@ export default function AuthPage() {
   const isLogin = location.pathname === '/login';
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+    <div className="">
       <AuthForm isLogin={isLogin} />
     </div>
   );
